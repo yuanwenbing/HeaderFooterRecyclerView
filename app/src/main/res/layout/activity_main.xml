@@ -7,8 +7,9 @@
 
     <com.yuan.recycler.headerfooter.HeaderFooterRecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         />
 
 </RelativeLayout>

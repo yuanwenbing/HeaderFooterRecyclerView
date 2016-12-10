@@ -51,6 +51,7 @@ public abstract class OnItemTouchListener implements RecyclerView.OnItemTouchLis
     private class RecyclerGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onSingleTapUp(MotionEvent e) {
+
             View childe = mRecyclerView.findChildViewUnder(e.getX(), e.getY());
             if (childe != null) {
                 RecyclerView.ViewHolder VH = mRecyclerView.getChildViewHolder(childe);

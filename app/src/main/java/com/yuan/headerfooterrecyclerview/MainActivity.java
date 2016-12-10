@@ -1,7 +1,9 @@
 package com.yuan.headerfooterrecyclerview;
 
 import android.app.Activity;
+import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -22,6 +24,11 @@ import java.util.List;
 public class MainActivity extends Activity {
 
     private HeaderFooterRecyclerView mRecyclerView;
+
+    private int[] attrs= new int[]{
+            android.R.attr.selectableItemBackground
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +56,7 @@ public class MainActivity extends Activity {
 
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
-            list.add("item " + i);
+            list.add("Item " + i);
         }
 
         TestAdapter adapter = new TestAdapter(list);
